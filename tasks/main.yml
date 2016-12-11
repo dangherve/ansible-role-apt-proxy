@@ -1,6 +1,6 @@
 ---
 # tasks file for sitedyno.apt_proxy
-- name: Create Apt prox configuration file
+- name: Create Apt proxy configuration file
   template:
     src: 'apt_proxy.conf.j2'
     dest: '/etc/apt/apt.conf.d/{{ apt_proxy_filename }}'
